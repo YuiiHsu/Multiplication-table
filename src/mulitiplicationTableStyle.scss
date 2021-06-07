@@ -1,0 +1,128 @@
+* {
+
+    font : normal normal normal 24px/24px Helvetica Neue;
+    color: #2EB738;
+}
+
+.container {
+    width     : 1280px;
+    height    : 1372px;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    display   : flex;
+    flex-flow : column;
+}
+
+.contentContainer {
+    width       : 1170px;
+    // height   : 1338px;
+    border      : 1px solid orange;
+    margin      : 30px 55px;
+    display     : flex;
+    flex-flow   : row;
+    flex-wrap   : wrap;
+}
+
+.title {
+    margin-left    : 52px;
+    width          : 280px;
+    height         : 300px;
+    display        : flex;
+    flex-flow      : column;
+    justify-content: center;
+    align-items    : center;
+    border         : 1px solid gray;
+
+    h1 {
+        font-size       : 44px;
+        font-weight     : bold;
+        background-color: brown;
+
+        line-height: 0px;
+    }
+
+    p {
+        font-size       : 18px;
+        line-height     : 0px;
+        background-color: chocolate;
+    }
+}
+
+.block {
+    // flex-basis      : 350px;
+    width  : 350px;
+    height : 354px;
+    border : 1px solid blue;
+    padding: 40px 15px;
+}
+
+.divider {
+    width          : 390px;
+    height         : 28px;
+    display        : flex;
+    justify-content: center;
+    flex-flow      : row;
+    border         : 1px solid red;
+    align-items    : center;
+    text-align     : center;
+
+    .line {
+        width  : 200px;
+        height : 0px;
+        border : 1px solid #2EB738;
+        opacity: 1;
+    }
+
+    &:after,
+    &:before {
+        content       : "x";
+        width         : 14px;
+        height        : 28px;
+        text-align    : left;
+        letter-spacing: 0px;
+        opacity       : 1;
+        margin        : 21px;
+    }
+}
+
+.itemContainer {
+    width        : 290px;
+    height       : 260px;
+    background   : #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow   : 0px 3px 10px #D8D8D8;
+    border-radius: 100px 0px 30px 0px;
+    border       : 1px solid darkslategray;
+    display      : flex;
+    flex-flow    : column;
+    flex-wrap    : wrap;
+    padding: 50px 30px;
+
+    .multiplicand {
+        width      : 80px;
+        height     : 80px;
+        font-size  : 120px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top : 50px;
+        text-align : left;
+        text-shadow: 4px 3px 0px #F0F0F0;
+        border     : 1px solid darkorchid;
+    }
+
+    .item {
+        height     : 35px;
+        text-align: left;
+        border: 1px solid rgb(29, 238, 203);
+    }
+}
+
+.footer {
+    background: #2EB738 0% 0% no-repeat padding-box;
+    width     : 1280px;
+    height    : 34px;
+
+    p {
+        color    : #F0F0F0;
+        font-size: 16px;
+        margin   : 8px 85px 8px 843px;
+    }
+}
