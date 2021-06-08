@@ -10,27 +10,30 @@ let multiplicands = [];
 let mutipleItems = [];
 
 // 計算乘法算式
-const calculation = (multiplicand) => {
-    mutipleItems = [];
-    for (let multiplier = 1; multiplier <= 9; multiplier++) {
-        mutipleItems.push(
-            <div className="item">
-                <p>{multiplicand} x {multiplier} = {multiplicand * multiplier}</p>
-            </div>
-        )
-    }
+class calculation {
+    constructor(multiplicand) {
+        mutipleItems = [];
+        for (let multiplier = 1; multiplier <= 9; multiplier++) {
+            mutipleItems.push(
+                <div className="item">
+                    <p>{multiplicand} x {multiplier} = {multiplicand * multiplier}</p>
+                </div>
+            )
+        }
 
-    return <div key={uuidv4()} className="block">
-        <div className="itemContainer">
-            <div className="multiplicand">{multiplicand}</div>
-            {mutipleItems}
+        return <div key={uuidv4()} className="block">
+            <div className="itemContainer">
+                <div className="multiplicand">{multiplicand}</div>
+                {mutipleItems}
+            </div>
         </div>
-    </div>
+    }
 }
+
 
 // 被乘數
 for (let multiplicand = 2; multiplicand <= 9; multiplicand++) {
-    multiplicands.push(calculation(multiplicand));
+    multiplicands.push(new calculation(multiplicand));
 }
 
 ReactDOM.render(
@@ -52,6 +55,8 @@ ReactDOM.render(
                     <span className="line"></span>
                 </div>
             </div>
+
+            {/* 運算式 */}
             {multiplicands}
         </div>
 
