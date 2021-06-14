@@ -4,15 +4,11 @@ import ReactDOM from 'react-dom';
 import { v4 as uuidv4 } from "uuid";
 import "./mulitiplicationTableStyle.scss";
 
-// 被乘數
-let multiplicands = [];
-// 乘法算式
-let mutipleItems = [];
-
 // 計算乘法算式
-class calculation {
+class Calculation {
     constructor(multiplicand) {
-        mutipleItems = [];
+        // 乘法算式
+        let mutipleItems = [];
         for (let multiplier = 1; multiplier <= 9; multiplier++) {
             mutipleItems.push(
                 <div className="item">
@@ -30,10 +26,12 @@ class calculation {
     }
 }
 
+// 被乘數
+let multiplicands = [];
 
 // 被乘數
 for (let multiplicand = 2; multiplicand <= 9; multiplicand++) {
-    multiplicands.push(new calculation(multiplicand));
+    multiplicands.push(new Calculation(multiplicand));
 }
 
 ReactDOM.render(
