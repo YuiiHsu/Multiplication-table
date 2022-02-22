@@ -1,3 +1,9 @@
+# Demo
+https://codepen.io/yuiihsu/pen/GRWBRJP
+
+# Blog
+https://yuideveloper.medium.com/js%E5%9C%B0%E4%B8%8B%E5%9F%8E-1f-9x9-%E4%B9%98%E6%B3%95%E8%A1%A8-29f622d0509a
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
